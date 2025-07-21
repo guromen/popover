@@ -1,0 +1,43 @@
+body {
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.popover {
+  position: absolute;
+  width: 240px;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  display: none;
+  z-index: 1000;
+}
+
+.popover::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  border-width: 5px;
+  border-style: solid;
+  border-color: white transparent ;
+}
+
+.popover-header {
+  background-color: #efefef;
+  font-weight: bold;
+  display: block;
+  padding: 10px;
+}
+
+.btn {
+  background-color: #d9534f;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+};
